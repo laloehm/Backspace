@@ -45,6 +45,12 @@ a:hover {
     z-index: 2000;
 }
 
+.navbar {
+    height: 70px;
+    background: white;
+    top: 0px;
+}
+
 .navbar-nav {
     display: -ms-flexbox;
     display: flex;
@@ -87,10 +93,8 @@ a:hover {
     width: 2.5rem;
     height: 2rem;
     overflow: hidden;
-    top: 40px;
+    top: 30px;
     right: 30px;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
 
 .hamburguer-icon span {
@@ -295,11 +299,25 @@ footer a {
 
 @media (max-width:767px) {
     h2 {
-        font-size: 28px;
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    p,
+    a,
+    li {
+        font-size: 16px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.3rem;
     }
 
     .home img {
-        max-width: 90%;
+        max-width: 60%;
     }
 
     .services .img-servicios {
