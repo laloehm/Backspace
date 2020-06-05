@@ -181,6 +181,13 @@ a:hover {
     right: 25%;
 }
 
+.about .animar {
+    position: absolute;
+    top: 100px;
+    left: 55px;
+    width: 60px;
+}
+
 /* Mision */
 .mision h2.vision::after {
     content: '';
@@ -253,6 +260,11 @@ a:hover {
 .clients {
     background: #474a48;
     color: #ffffff;
+}
+
+.why .animada {
+    position: absolute;
+    width: 50px;
 }
 
 /* Services */
@@ -338,12 +350,128 @@ a:hover {
     font-family: 'Ghotam-light', serif;
     font-weight: normal;
     position: absolute;
-    right: -11px;
+    right: -10px;
     height: 1px;
     top: -28px;
     animation: ancho 5s forwards infinite;
     -webkit-animation: ancho 5s forwards infinite;
 }
+
+@keyframes abajo {
+    0% {
+        height: 0px;
+        width: 0;
+    }
+
+    50% {
+        height: 85px;
+        width: 0;
+    }
+
+    55% {
+        height: 85px;
+        width: 0;
+    }
+
+    60% {
+        height: 85px;
+        width: 0px;
+    }
+
+    100% {
+        height: 85px;
+        width: 80px;
+        border-bottom: 1px solid;
+    }
+
+}
+
+@keyframes ancho {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        right: -10px;
+        top: 64px;
+        transform: rotate(0deg);
+    }
+
+    55% {
+        top: 85px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        right: -21px;
+    }
+
+    60% {
+        top: 85px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        right: -21px;
+    }
+
+    100% {
+        top: 85px;
+        right: 50px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+
+}
+
+@keyframes anchodos {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        right: -8px;
+        top: 64px;
+        transform: rotate(0deg);
+    }
+
+    55% {
+        top: 85px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        right: -21px;
+    }
+
+    60% {
+        top: 85px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        right: -21px;
+    }
+
+    100% {
+        top: 85px;
+        right: 50px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+    }
+
+}
+
 
 /* span {
     display: inline-block;
@@ -412,6 +540,11 @@ footer a:hover {
         left: -200px;
         top: -80px;
     }
+
+    .why img.animada {
+        top: -35px;
+        left: 135px;
+    }
 }
 
 @media (max-width:1199px) {
@@ -419,6 +552,17 @@ footer a:hover {
         width: 400px;
         left: -140px;
         top: -70px;
+    }
+
+    .about .animar {
+        top: 90px;
+        left: 50px;
+    }
+
+    .why .animada {
+        width: 40px;
+        top: -35px;
+        left: 120px;
     }
 
     .mision h2.vision::before {
@@ -462,6 +606,12 @@ footer a:hover {
     .partners a {
         font-size: 13px;
     }
+
+    .partners div h3::before {
+        right: -8px;
+        /* animation-name: anchodos; */
+    }
+
 }
 
 @media (max-width:991px) {
@@ -470,6 +620,18 @@ footer a:hover {
         top: 0;
         left: 0;
         margin-top: 2rem;
+    }
+
+    .about .animar {
+        top: 150px;
+        left: 135px;
+    }
+
+    .why .animada {
+        width: 50px;
+        left: 210px;
+        position: absolute;
+        top: -30px;
     }
 
     .partners h3 {
@@ -532,6 +694,19 @@ footer a:hover {
         top: -25px;
     }
 
+    .about .animar {
+        top: 40px;
+        left: 70px;
+        width: 40px;
+    }
+
+    .why .animada {
+        width: 40px;
+        top: -40px;
+        position: absolute;
+        left: 105px;
+    }
+
     .services .img-servicios {
         max-width: 90%;
     }
@@ -543,6 +718,10 @@ footer a:hover {
     .mision .estrella::before,
     .mision .estrella::after {
         display: none;
+    }
+
+    .mision .pulse {
+        width: 60px;
     }
 
     footer ul {
@@ -557,76 +736,4 @@ footer a:hover {
         text-align: center;
         padding-top: 2rem;
     }
-}
-
-@keyframes abajo {
-    0% {
-        height: 0px;
-        width: 0;
-    }
-
-    50% {
-        height: 85px;
-        width: 0;
-    }
-
-    55% {
-        height: 85px;
-        width: 0;
-    }
-
-    60% {
-        height: 85px;
-        width: 0px;
-    }
-
-    100% {
-        height: 85px;
-        width: 80px;
-        border-bottom: 1px solid;
-    }
-
-}
-
-@keyframes ancho {
-    0% {
-        top: 0;
-    }
-
-    50% {
-        right: -11px;
-        top: 64px;
-        transform: rotate(0deg);
-    }
-
-    55% {
-        top: 85px;
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        right: -21px;
-    }
-
-    60% {
-        top: 85px;
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        right: -21px;
-    }
-
-    100% {
-        top: 85px;
-        right: 50px;
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-    }
-
 }
