@@ -18,11 +18,25 @@
     padding: 0;
 }
 
+.my-5 {
+    margin-top: 48px !important;
+    margin-bottom: 48px !important;
+}
+
+.py-5 {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+}
+
 h2,
 h3,
 h4 {
     font-family: 'Ghotam', serif;
     letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 32px;
 }
 
 p,
@@ -301,6 +315,11 @@ a:hover {
 /* Colaboradores */
 .partners h3 {
     position: relative;
+    font-size: 25px;
+}
+
+.partners a {
+    font-size: 15px;
 }
 
 .partners div h3::after {
@@ -430,6 +449,18 @@ footer a:hover {
 
     .mision h2.mision::before {
         right: -15px;
+    }
+
+    .partners h3 {
+        font-size: 22px;
+    }
+
+    .partners p {
+        font-size: 15px;
+    }
+
+    .partners a {
+        font-size: 13px;
     }
 }
 
