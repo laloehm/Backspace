@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -58,7 +59,7 @@
 
     <!-- Home -->
     <section class="home d-flex justify-content-center align-items-center">
-        <img src="images/Logo-Home.png" alt="">
+        <img src="images/Logo-Home.png" class="fadeIn wow" alt="Logo de backspace">
     </section>
 
     <!-- Quienes somos -->
@@ -71,7 +72,8 @@
                     <p>Somos los que estamos en el espacio atrás de ti, impulsándote con soluciones tecnológicas para que cumplas tus metas.</p>
                 </div>
                 <div class="col-lg-6 px-5 pr-lg-5 pl-lg-0">
-                    <img src="images/About/Quienes-somos.png" class="img-fluid" alt="">
+                    <img src="images/About/Quienes-somos.png" class="img-fluid" alt="Quienes somos backspace">
+                    <img src="images/About/Question.png" class="question wow pulse" data-wow-iteration="infinite" alt="Quienes somos backspace">
                 </div>
             </div>
         </div>
@@ -79,24 +81,26 @@
 
     <!-- Mision -->
     <section class="mision my-5 py-5" id="mision">
-        <div class="container">
-            <h2 class="text-right">MISIÓN</h2>
+        <div class="container position-relative">
+            <h2 class="text-right mision position-relative p-0 px-md-5 p-xl-0">MISIÓN</h2>
             <div class="row align-items-center py-5">
                 <div class="col-md-4 d-flex justify-content-center">
-                    <img src="images/Mision/Like.png" width="70" height="" class="" alt="">
+                    <img src="images/Mision/Like.png" width="70" height="" class="wow pulse" data-wow-iteration="infinite" data-wow-duration="1s" alt="">
                 </div>
                 <div class="col-md-6 offset-md-2 d-flex align-items-center">
                     <p class="text-right mb-0">Brindar soluciones rápidas y eficientes para tus problemas en el área de sistemas con el mejor servicio para tus necesidades.</p>
                 </div>
             </div>
-            <h2 class="">VISIÓN</h2>
+            <h2 class="vision position-relative p-0 px-md-5 p-xl-0">VISIÓN</h2>
             <div class="row my-5">
                 <div class="col-md-6">
                     <p class="">Ser esa solución en tecnologías al alcance de todos, desde el cliente mas pequeño hasta la empresa mas grande. Siempre brindado el mejor servicio</p>
                     <p>Ser la empresa más ágil y accesible para solucionar problemas con todos nuestros clientes.</p>
                 </div>
                 <div class="col-md-4 offset-md-2 d-flex justify-content-center align-items-center">
-                    <img src="images/Mision/Estrella.png" height="" width="70" alt="" class="">
+                    <div class="estrella">
+                        <img src="images/Mision/Estrella.png" width="70" alt="Mision de backspace" data-wow-iteration="infinite" class="wow fadeIn" data-wow-duration="2s">
+                    </div>
                 </div>
             </div>
         </div>
@@ -108,7 +112,7 @@
             <h2 class="text-center">¿POR QUÉ NOSOTROS?</h2>
             <div class="row my-5">
                 <div class="col-lg-5 px-5 order-1 order-lg-0 mt-5 mt-lg-0">
-                    <img src="images/Why/Porque-nosotros.png" class="img-fluid" alt="">
+                    <img src="images/Why/Porque-nosotros.png" class="img-fluid wow fadeIn" alt="">
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center order-0 order-lg-1">
                     <p>Amamos la Tecnología, la innovación y la vanguardia, nos actualizamos día a día para brindarte esa solución específica que tú necesitas en el ramo de Sistemas.</p>
@@ -120,7 +124,7 @@
 
     <!-- Servicios -->
     <section class="services my-5 py-5" id="servicios">
-        <h2 class="mb-4 pb-1"><span>SERVICIOS</span> <img src="images/Servicios/Palomita.png" class="check" alt=""></h2>
+        <h2 class="mb-4 pb-1"><span>SERVICIOS</span> <img src="images/Servicios/Palomita.png" class="check fadeIn wow" alt=""></h2>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
@@ -140,7 +144,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
-                    <img src="images/Servicios/Servicios.png" class="img-servicios" alt="">
+                    <img src="images/Servicios/Servicios.png" class="img-servicios wow fadeIn" alt="">
                 </div>
             </div>
         </div>
@@ -151,12 +155,12 @@
         <div class="container d-flex flex-column align-items-center">
             <h2 class="text-center">CERTIFICACIONES</h2>
             <div class="row flex-column my-5">
-                <img src="images/Certificaciones/Apple.png" class="d-block mx-auto" alt="" width="80">
+                <img src="images/Certificaciones/Apple.png" class="d-block mx-auto fadeIn wow" alt="" width="80">
                 <h3 class="text-center my-5">ACMT Apple Certificated Macintosh Tecnishian
                 </h3>
             </div>
             <div class="row flex-column my-5">
-                <img src="images/Certificaciones/Google.png" class="d-block mx-auto" alt="" width="200">
+                <img src="images/Certificaciones/Google.png" class="d-block mx-auto fadeIn wow" alt="" width="200">
                 <h3 class="text-center my-5">Google Support Professional
                 </h3>
             </div>
@@ -168,22 +172,35 @@
         <h2 class="text-right"><span>EVENTOS</span></h2>
         <div class="container">
             <div class="row">
-                <div class="box-events">
-                    <P class="mb-0">-EDITORIAL TELEVISA</P>
-                    <p>Reestructuración y mantenimiento correctivo y preventivo</p>
-                    <p class="mb-0">-“HOSPITAL ABC”</p>
-                    <p>Mantenimiento Preventivo, creación de inventario y póliza de Servicio. Enfocados en brindar el área de Soporte Técnico.</p>
-                    <p class="mb-0"> -LEGION BRAND</p>
-                    <p>Mantenimiento correctivo y modificaciones de hardware para su mejor uso.</p>
-                    <p class="mb-0"> -ABOGADOS SUÁREZ</p>
-                    <p> Mantenimiento correctivo, creación de área de sistemas desde cero</p>
-                    <p class="mb-0">-VIASTARA</p>
-                    <p>Mantenimiento preventivo y renovación de equipos.</p>
-                    <p class="mb-0"> -SMART PLUS</p>
-                    <p> Renovación de equipos con migración de datos.</p>
-                    <p class="mb-0">-CRÉDITO FÁCIL</p>
-                    <p>Mantenimiento correctivo y reestructuración del área de diseño</p>
-
+                <div class="box-events" data-wow-delay="1s">
+                    <div class="wow fadeIn">
+                        <P class="mb-0">-EDITORIAL TELEVISA</P>
+                        <p>Reestructuración y mantenimiento correctivo y preventivo</p>
+                    </div>
+                    <div class="wow fadeIn" data-wow-delay="2s">
+                        <p class="mb-0">-“HOSPITAL ABC”</p>
+                        <p>Mantenimiento Preventivo, creación de inventario y póliza de Servicio. Enfocados en brindar el área de Soporte Técnico.</p>
+                    </div>
+                    <div class="wow fadeIn" data-wow-delay="3s">
+                        <p class="mb-0"> -LEGION BRAND</p>
+                        <p>Mantenimiento correctivo y modificaciones de hardware para su mejor uso.</p>
+                    </div>
+                    <div class="wow fadeIn" data-wow-delay="4s">
+                        <p class="mb-0"> -ABOGADOS SUÁREZ</p>
+                        <p> Mantenimiento correctivo, creación de área de sistemas desde cero</p>
+                    </div>
+                    <div class="wow fadeIn" data-wow-delay="5s">
+                        <p class="mb-0">-VIASTARA</p>
+                        <p>Mantenimiento preventivo y renovación de equipos.</p>
+                    </div>
+                    <div class="wow fadeIn" data-wow-delay="6s">
+                        <p class="mb-0"> -SMART PLUS</p>
+                        <p> Renovación de equipos con migración de datos.</p>
+                    </div>
+                    <div class="wow fadeIn" data-wow-delay="7s">
+                        <p class="mb-0">-CRÉDITO FÁCIL</p>
+                        <p>Mantenimiento correctivo y reestructuración del área de diseño</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -266,7 +283,7 @@
         <div class="row">
             <img src="images/Logo-footer.png" width="150" class="img-fluid d-block mx-auto" alt="">
         </div>
-        <div class="row my-4 px-3 px-lg-5">
+        <div class="row mt-4 my-md-4 px-3 px-lg-5">
             <ul class="d-flex flex-wrap justify-content-center justify-content-lg-between w-100 px-3 px-lg-5">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">¿QUIÉNES SOMOS?</a>
@@ -297,13 +314,16 @@
         <a href="" class="privacity">PRIVACY POLICY</a>
     </footer>
 
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <script src="js/wow.min.js"></script>
     <script src="js/scripts.js"></script>
+
 
 </body>
 

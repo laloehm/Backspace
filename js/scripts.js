@@ -23,8 +23,10 @@ $("a.smooth").on("click", function (e) {
     }, 1000);
 });
 
-$(function () {
-    $(document).bind("contextmenu", function (e) {
-        return false;
-    });
-});
+// $(function () {
+//     $(document).bind("contextmenu", function (e) {
+//         return false;
+//     });
+// });
+
+new WOW().init();
