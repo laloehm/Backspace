@@ -189,71 +189,98 @@ a:hover {
 }
 
 /* Mision */
-.mision h2.vision::after {
+.mision h2.vision span.uno {
     content: '';
     display: block;
     height: 3px;
     width: 40px;
-    background: #000;
     position: absolute;
     top: 15px;
-    left: -55px;
+    animation: uno 1s linear forwards 1s;
+    -webkit-animation: uno 1s linear forwards 1s;
 }
 
-.mision h2.vision::before {
+.mision h2.vision span.dos {
     content: '';
     display: block;
     height: 237px;
     width: 3px;
-    background: #000;
     position: absolute;
     top: -222px;
     left: -55px;
+    animation: dos 2s forwards linear 1400ms;
+    -webkit-animation: dos 2s forwards linear 1400ms;
 }
 
-.mision h2.mision::after {
+@keyframes dos {
+    0% {
+        height: 0;
+        top: 15px;
+    }
+
+    50% {
+        height: 0;
+        top: 15px;
+    }
+
+    100% {
+        height: 237px;
+        top: -222px;
+        border-left: 3px solid #000;
+    }
+}
+
+.mision h2.mision span.tres {
     content: '';
     display: block;
     height: 2px;
     width: 92%;
-    background: #000;
     position: absolute;
     top: 15px;
     left: -52px;
+    /* animation: tres 4s forwards linear 2s;
+    -webkit-animation: tres 4s forwards linear 2s; */
 }
 
-.mision h2.mision::before {
+
+.mision h2.mision span.cuatro {
     content: '';
     display: block;
     height: 2px;
     width: 40px;
-    background: #000;
     position: absolute;
     top: 15px;
-    right: -55px;
+    /*right: -55px;
+    */
+    /* animation: cuatro 1s forwards linear 5600ms;
+    -webkit-animation: cuatro 1s forwards linear 5600ms; */
 }
 
-.mision .estrella::after {
+.mision .estrella span.cinco {
     content: '';
     display: block;
     height: 400px;
     width: 2px;
-    background: #000;
     position: absolute;
     top: -306px;
     right: -55px;
+    /* animation: cinco 2s forwards linear 6000ms;
+    -webkit-animation: cinco 2s forwards linear 6000ms; */
 }
 
-.mision .estrella::before {
+.mision .estrella span.seis {
     content: '';
     display: block;
     height: 2px;
-    width: 180px;
     background: #000;
     position: absolute;
     top: 92px;
     right: -55px;
+    /* animation: seis 2s linear forwards 7200ms;
+    -webkit-animation: seis 2s linear forwards 7200ms; */
 }
+
+
 
 /* Why */
 .why,
