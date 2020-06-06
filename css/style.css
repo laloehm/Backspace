@@ -738,13 +738,13 @@ footer a:hover {
         max-width: 90%;
     }
 
-    .mision h2.vision::before,
-    .mision h2.vision::after,
-    .mision h2.mision::before,
-    .mision h2.mision::after,
-    .mision .estrella::before,
-    .mision .estrella::after {
-        display: none;
+    .mision h2.vision span,
+    .mision h2.vision span,
+    .mision h2.mision span,
+    .mision h2.mision span,
+    .mision .estrella span,
+    .mision .estrella span {
+        display: none !important;
     }
 
     .mision .pulse {
