@@ -29,4 +29,15 @@ $(function () {
     });
 });
 
+// Funcion para barra de Menu
+$(window).scroll(function () {
+    let header = $("#menu");
+    if ($("#menu").offset().top > 500) {
+        $('.navbar-brand img').fadeIn();
+    } else {
+        $('.navbar-brand img').fadeOut();
+    }
+});
+
+
 new WOW().init();

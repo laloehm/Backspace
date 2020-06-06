@@ -65,6 +65,12 @@ a:hover {
     top: 0px;
 }
 
+.navbar-brand img {
+    display: none;
+    ;
+    width: 80px;
+}
+
 .navbar-nav {
     display: -ms-flexbox;
     display: flex;
