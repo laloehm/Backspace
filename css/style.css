@@ -747,7 +747,7 @@ footer a:hover {
     }
 
     .home img {
-        max-width: 60%;
+        max-width: 100%;
     }
 
     .about .question {
@@ -763,10 +763,10 @@ footer a:hover {
     }
 
     .why .animada {
-        width: 40px;
-        top: -40px;
+        width: 35px;
+        top: 60px;
         position: absolute;
-        left: 105px;
+        left: 90px;
     }
 
     .services .img-servicios {
