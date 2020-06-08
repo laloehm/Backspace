@@ -173,7 +173,7 @@ a:hover {
 }
 
 .home img {
-    width: 450px;
+    /* width: 550px; */
 }
 
 /* About */
@@ -290,7 +290,8 @@ a:hover {
 /* Why */
 .why,
 .clients {
-    background: #474a48;
+    /* background: #474a48; */
+    background: #606060;
     color: #ffffff;
 }
 
@@ -322,6 +323,20 @@ a:hover {
 }
 
 .services .img-servicios {
+    position: absolute;
+}
+
+.services .cuadro-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 38px;
+}
+
+.services .cuadro-top {
+    width: 38px;
+    top: -75px;
+    left: 0;
     position: absolute;
 }
 
@@ -362,6 +377,12 @@ a:hover {
     font-size: 25px;
 }
 
+/* .partners h3 {
+    border: 20px solid red;
+    border-image-source: url(../images/Colaboradores/Flecha.png);
+    border-image-slice: 30;
+} */
+
 .partners a {
     font-size: 15px;
 }
@@ -376,6 +397,9 @@ a:hover {
     -webkit-animation: abajo 5s forwards infinite;
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
+    /* border: 20px solid red;
+    border-image-source: url(../images/Colaboradores/Flecha.png);
+    border-image-slice: 30; */
 }
 
 .partners div h3::before {
@@ -414,7 +438,7 @@ a:hover {
     100% {
         height: 85px;
         width: 80px;
-        border-bottom: 2px solid #000;
+        border-bottom: 1px solid #000;
     }
 
 }
@@ -575,8 +599,9 @@ footer a:hover {
     }
 
     .why img.animada {
-        top: -35px;
+        top: 25px;
         left: 135px;
+        width: 45px;
     }
 }
 
@@ -662,9 +687,9 @@ footer a:hover {
 
     .why .animada {
         width: 50px;
-        left: 210px;
+        left: 215px;
         position: absolute;
-        top: -30px;
+        top: 45px;
     }
 
     .partners h3 {
@@ -695,6 +720,10 @@ footer a:hover {
 
     .mision .estrella::before {
         width: 70px;
+    }
+
+    .services .cuadro-top {
+        top: 30px;
     }
 }
 
@@ -742,6 +771,11 @@ footer a:hover {
 
     .services .img-servicios {
         max-width: 90%;
+    }
+
+    .services .cuadro-top,
+    .services .cuadro-bottom {
+        width: 28px;
     }
 
     .mision h2.vision span,
